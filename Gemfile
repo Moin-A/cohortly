@@ -43,6 +43,9 @@ gem "image_processing", "~> 1.2"
 # Flexible authentication solution for Rails [https://github.com/heartcombo/devise]
 gem "devise"
 
+# A framework for building reusable, testable & encapsulated view components [https://viewcomponent.org]
+gem "view_component"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -59,6 +62,9 @@ group :development, :test do
   # RSpec testing framework [https://github.com/rspec/rspec-rails]
   gem "rspec-rails"
 
+  # Acceptance test framework, used here for ViewComponent's render_inline matchers [https://github.com/teamcapybara/capybara]
+  gem "capybara"
+
   # Interactive Ruby debugger/REPL [https://github.com/pry/pry]
   gem "pry-rails"
 end
@@ -73,3 +79,5 @@ group :development do
 end
 
 gem "inertia_rails", "~> 3.22"
+
+gem "vite_rails", "~> 3.11"
