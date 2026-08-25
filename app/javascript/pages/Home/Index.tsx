@@ -1,4 +1,4 @@
-import { Head, router } from '@inertiajs/react'
+import { Head, Link, router } from '@inertiajs/react'
 
 type User = {
   id: number
@@ -26,7 +26,8 @@ export default function Index({ current_user }: HomeProps) {
       ) : (
         <>
           <p>Not signed in.</p>
-          <a href="/users/sign_in">Sign in</a>
+          <Link href="/users/sign_in">Sign in</Link>
+          {/* Registrations still render ERB, so this must stay a plain anchor. */}
           <a href="/users/sign_up">Sign up</a>
         </>
       )}
