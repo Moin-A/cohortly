@@ -72,4 +72,4 @@ group :development do
   gem "letter_opener_web"
 end
 
-gem "inertia_rails", "~> 3.22"
+gem "inertia_rails", "~> 3.23"
